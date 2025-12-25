@@ -4,3 +4,16 @@ System Report - 2025-12-25 03:46:59
 CPU Usage (%): 1.9
 Memory Usage (%): 75.2
 Disk Usage (%): 7.4
+
+System Report - 2025-12-25 03:52:06
+----------------------------------------
+CPU Usage (%): 4.9
+Memory Usage (%): 75.6
+Disk Usage (%): 7.4
+
+Top Processes (by CPU)
+PID 900 | distnoted | CPU 0.0% | MEM 0.04%
+PID 1358 | cfprefsd | CPU 0.0% | MEM 0.03%
+PID 1361 | loginwindow | CPU 0.0% | MEM 0.29%
+PID 1371 | lsd | CPU 0.0% | MEM 0.07%
+PID 1400 | secd | CPU 0.0% | MEM 0.1%
