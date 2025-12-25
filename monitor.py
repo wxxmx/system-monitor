@@ -1,3 +1,4 @@
+from log_analyzer import analyze_logs
 import psutil
 from datetime import datetime
 
@@ -54,6 +55,8 @@ def save_report(stats, processes):
     filename = "system_report.txt"
     timestamp = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
 
+    log_results = analyze_logs()
+
     with open(filename, "a") as f:
         f.write(f"\nSystem Report - {timestamp}\n")
         f.write("-" * 40 + "\n")
@@ -69,7 +72,12 @@ def save_report(stats, processes):
                 f"MEM {round(p['memory_percent'], 2)}%\n"
             )
 
-    print(f"\n[+] Report updated: {filename}")
+        f.write("\nLog Analysis (Last 1 Hour)\n")
+        f.write(f"Errors detected: {log_results['errors']}\n")
+        f.write(f"Warnings detected: {log_results['warnings']}\n")
+        f.write(f"Authentication-related events: {log_results['auth_events']}\n")
+
+    print(f"\n[+] Report saved to {filename}")
 
 if __name__ == "__main__":
     stats = get_system_stats()

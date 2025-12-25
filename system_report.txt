@@ -17,3 +17,21 @@ PID 1358 | cfprefsd | CPU 0.0% | MEM 0.03%
 PID 1361 | loginwindow | CPU 0.0% | MEM 0.29%
 PID 1371 | lsd | CPU 0.0% | MEM 0.07%
 PID 1400 | secd | CPU 0.0% | MEM 0.1%
+
+System Report - 2025-12-25 03:56:17
+----------------------------------------
+CPU Usage (%): 5.3
+Memory Usage (%): 76.3
+Disk Usage (%): 7.4
+
+Top Processes (by CPU)
+PID 900 | distnoted | CPU 0.0% | MEM 0.04%
+PID 1358 | cfprefsd | CPU 0.0% | MEM 0.03%
+PID 1361 | loginwindow | CPU 0.0% | MEM 0.29%
+PID 1371 | lsd | CPU 0.0% | MEM 0.07%
+PID 1400 | secd | CPU 0.0% | MEM 0.11%
+
+Log Analysis (Last 1 Hour)
+Errors detected: 0
+Warnings detected: 0
+Authentication-related events: 0
